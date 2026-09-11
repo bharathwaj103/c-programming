@@ -1,0 +1,127 @@
+25. Write a function to find the square of a number.
+#include <stdio.h>
+
+int square(int n)
+{
+    return n * n;
+}
+
+int main()
+{
+    int num, result;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    result = square(num);
+
+    printf("Square = %d", result);
+
+    return 0;
+}
+26. Write a function to check whether a number is even.
+#include <stdio.h>
+
+int isEven(int n)
+{
+    if (n % 2 == 0)
+        return 1;
+    else
+        return 0;
+}
+
+int main()
+{
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (isEven(num))
+        printf("The number is even.");
+    else
+        printf("The number is odd.");
+
+    return 0;
+}
+27. Write a function to find the largest of three numbers.
+#include <stdio.h>
+
+int largest(int a, int b, int c)
+{
+    if (a >= b && a >= c)
+        return a;
+    else if (b >= a && b >= c)
+        return b;
+    else
+        return c;
+}
+
+int main()
+{
+    int a, b, c;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    printf("Largest = %d", largest(a, b, c));
+
+    return 0;
+}
+28. Write a function to calculate factorial.
+#include <stdio.h>
+
+int factorial(int n)
+{
+    int fact = 1;
+
+    for (int i = 1; i <= n; i++)
+        fact = fact * i;
+
+    return fact;
+}
+
+int main()
+{
+    int n;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    printf("Factorial = %d", factorial(n));
+
+    return 0;
+}
+
+29. Write a function to check whether a number is prime.
+#include <stdio.h>
+
+int isPrime(int n)
+{
+    if (n <= 1)
+        return 0;
+
+    for (int i = 2; i <= n / 2; i++)
+    {
+        if (n % i == 0)
+            return 0;
+    }
+
+    return 1;
+}
+
+int main()
+{
+    int n;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (isPrime(n))
+        printf("The number is prime.");
+    else
+        printf("The number is not prime.");
+
+    return 0;
+}
+
