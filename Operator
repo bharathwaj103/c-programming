@@ -1,0 +1,94 @@
+6. Read an integer and find whether it is even or odd using the modulus operator.
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+
+    if (n % 2 == 0)
+        printf("%d is even", n);
+    else
+        printf("%d is odd", n);
+
+    return 0;
+}
+7. Read a three-digit number and find the sum of its digits.
+
+#include <stdio.h>
+
+int main() {
+    int n, sum;
+
+    printf("Enter a three-digit number: ");
+    scanf("%d", &n);
+
+    sum = (n / 100) + ((n / 10) % 10) + (n % 10);
+
+    printf("Sum of digits = %d", sum);
+
+    return 0;
+}
+8. Read a number and extract its last digit.
+
+#include <stdio.h>
+
+int main() {
+    int n, lastDigit;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    lastDigit = n % 10;
+
+    printf("Last digit = %d", lastDigit);
+
+    return 0;
+}
+
+9. Predict the output.
+int a = 10, b = 20;
+printf("%d\n", a++);
+printf("%d\n", ++b);
+printf("%d\n", a);
+printf("%d\n", b);
+CODING:
+
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 20;
+
+    printf("%d\n", a++);
+    printf("%d\n", ++b);
+    printf("%d\n", a);
+    printf("%d\n", b);
+
+    return 0;
+}
+
+output:
+10
+21
+11
+21
+
+10. Predict the output.
+#include <stdio.h>
+
+int main() {
+    int a = 5;
+
+    printf("%d\n", a++);
+    printf("%d\n", ++a);
+    printf("%d\n", a--);
+    printf("%d\n", a);
+
+    return 0;
+}
+output:
+5
+7
+7
+6
